@@ -1,13 +1,16 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@font-face{
+  font-family: 'Graphik Web';
+  src: url('../src/fonts/0f75d7dbae2c33c88cb3fda5bb379b43.woff2');
+  src: url('../src/fonts/download1.woff');
+  src: url('../src/fonts/download2.woff');
+  src: url('../src/fonts/download3.woff');
+  src: url('../src/fonts/download4.woff');
+  src: url('../src/fonts/download5.woff');
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Graphik Web",sans-serif;
+  background: #f0f0f0;
 }
