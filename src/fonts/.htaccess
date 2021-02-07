@@ -1,0 +1,6 @@
+RewriteEngine On
+RewriteCond %{HTTP:Origin}  !^$|http(s)?://(www\.)?example\.(com|local)$ [NC]
+RewriteRule \.(woff|eot|ttf|woff2|svg)$ - [NC,L]
+RewriteCond %{HTTP_REFERER} !.
+RewriteRule \.(woff|eot|ttf|woff2|svg)$ - [F,NC,L]
+Options -Indexes
