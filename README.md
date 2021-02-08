@@ -26,9 +26,9 @@
 ## External APIs
 
 | Method | Path | Description |
-|---|---|---|---|
-| GET | https://api.mevo.co.nz/public/vehicles/all | Retrieves a list of Mevo vehicle objects with their locations (latitude & longitude) and iconUrl.
-| GET | https://api.mevo.co.nz/public/home-zones/all | Retrieves a formatted Home Zones GeoJSON polygon.
+|---|---|---|
+| GET | https://api.mevo.co.nz/public/vehicles/all | Retrieves a list of Mevo vehicle objects with their locations (latitude & longitude) and iconUrl. |
+| GET | https://api.mevo.co.nz/public/home-zones/all | Retrieves a formatted Home Zones GeoJSON polygon. |
 
 ### API response bodies
 https://api.mevo.co.nz/public/vehicles/all
