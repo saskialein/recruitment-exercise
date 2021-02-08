@@ -47,7 +47,7 @@ class Map extends PureComponent {
 
     render() {
         return (
-          <div>
+          <section className={classes.MapContainer}>
             <ReactMapGL
                   {...this.state.viewport}
                     scrollZoom={false}
@@ -57,7 +57,7 @@ class Map extends PureComponent {
                     dragPan={true}
                     maxPitch={55}
                     maxZoom={19}
-                      className={classes.Map}
+                    className={classes.Map}
                       mapboxApiAccessToken={process.env.REACT_APP_MAPBOX_TOKEN}
                       mapStyle='mapbox://styles/saskialein/ckkredcas04qs17ptlqy3rl2q'
                       onViewportChange={(viewport) => {
@@ -141,7 +141,7 @@ class Map extends PureComponent {
                           }
                     />
                   </ReactMapGL> 
-            </div>
+            </section>
       )
     }
 }

@@ -1,0 +1,47 @@
+.Container {
+    font-family: inherit;
+    text-transform: lowercase;
+    box-sizing: border-box;
+    display: block;
+    /* width: 100vw; */
+    /* margin-right: auto;
+    margin-left: auto; */
+    /* justify-content: center; */
+    /* align-items: center; */
+}
+
+
+
+.CustomTriggerCSS,
+.CustomTriggerCSSOpen
+{
+    font-size: 1rem;
+    font-style: italic;
+    cursor: pointer;
+}
+
+.CustomOuterContentCSS,
+.CustomInnerContentCSS {
+   
+}
+
+.HeaderContainer {
+    /* width: 100%; */
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+    margin: 0 2rem
+}
+
+h2 {
+    font-weight: 300;
+}
+
+.ExpandMore,
+.ExpandLess {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* font-size: 3rem; */
+    padding-right: 1rem;
+}

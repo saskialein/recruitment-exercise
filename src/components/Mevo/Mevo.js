@@ -2,7 +2,7 @@ import React from 'react'
 import classes from './Mevo.module.css'
 
 const Mevo = () =>
-(<>
+(<section>
     <h1>The <b>coolest cars</b> <br />in the coolest little capital</h1>
         <div className={classes.Container}>
             <h3>When you need a ride in Wellington...</h3>
@@ -18,7 +18,7 @@ const Mevo = () =>
             <p>I have to catch a flight from Wellington Airport.</p>
             <h4>...<b>mevo</b> is there for you.</h4>
         </div>
-    </>
+    </section>
     )
 
     export default Mevo

@@ -20,7 +20,7 @@
 .NavigationItem a:hover,
 .NavigationItem a:active,
 .NavigationItem a:focus,
-.NavigationItem a.active {
+.NavigationItem a.Active {
     background-color:  rgba(0,0,0,.05);
     transition: background-color .3s;
 }
@@ -45,7 +45,7 @@
     
     .NavigationItem a:hover,
     .NavigationItem a:active,
-    .NavigationItem a.active {
+    .NavigationItem a.Active {
     /* background-color: rgba(0, 0, 0, .2); */
     /* border-bottom: 2px solid #f7590d; */
     color: white;
