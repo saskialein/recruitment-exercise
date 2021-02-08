@@ -1,23 +1,18 @@
-import React, {Component} from 'react'
-import ReactMapGL, { Marker, Source, Layer, NavigationControl } from 'react-map-gl'
+import React, {PureComponent} from 'react'
+import ReactMapGL, { Marker, Source, Layer, NavigationControl, GeolocateControl } from 'react-map-gl'
 import axios from 'axios'
 
 import classes from './Map.module.css'
 import 'mapbox-gl/dist/mapbox-gl.css';
-
-const navControlStyle= {
-    right: 10,
-    top: 10
-};
-class Map extends Component {
+  
+class Map extends PureComponent {
     state = {
         viewport: {
             latitude: -41.299382,
             longitude: 174.793737,
             width: '98vw',
             height: '60vh',
-            zoom: 11.75,
-            scrollZoom: false
+            zoom: 11.75
         },
         userLocation: {},
         loadedMap: false,
@@ -50,21 +45,34 @@ class Map extends Component {
                 })
         }
 
-    
     render() {
         return (
           <div>
-                  <ReactMapGL
+            <ReactMapGL
                   {...this.state.viewport}
-                  scrollZoom={false}
-                  className={classes.Map}
+                    scrollZoom={false}
+                    dragRotate={true}
+                    // dragPan={true}
+                    // smooth={true}
+                    maxPitch={55}
+                    maxZoom={19}
+                    // speed={5}
+                    inertia={50550}
+                      className={classes.Map}
                       mapboxApiAccessToken={process.env.REACT_APP_MAPBOX_TOKEN}
                       mapStyle='mapbox://styles/saskialein/ckkredcas04qs17ptlqy3rl2q'
                       onViewportChange={(viewport) => {
-                          this.setState({ viewport })
+                          this.setState({ viewport})
                           this.setState({ loadedMap: true })
                   }}>
-                  <NavigationControl style={navControlStyle} />
+                    <NavigationControl className={classes.NavControlStyle} />
+                    <GeolocateControl
+                        className={classes.GeolocateStyle}
+                        positionOptions={{enableHighAccuracy: true}}
+                        trackUserLocation={true}
+                        fitBoundsOptions={{maxZoom: 12.1}}
+                        // auto
+        />
                   {this.state.mevoVehicleData.map((car, i) => {
                         //   let size = 33
                       return (
@@ -108,7 +116,6 @@ class Map extends Component {
                           filter={['==', 'extrude', 'true']}
                           type= 'fill-extrusion'
                       minZoom={13.5}
-                      maxZoom={13.8}
                           paint={{
                               "fill-extrusion-color": '#aaa',
                               "fill-extrusion-height": 
@@ -132,7 +139,8 @@ class Map extends Component {
                           ],
                               "fill-extrusion-opacity": 0.6
                           }
-                          } />
+                          }
+                    />
                   </ReactMapGL> 
             </div>
       )

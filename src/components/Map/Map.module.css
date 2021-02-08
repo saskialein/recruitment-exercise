@@ -1,5 +1,3 @@
-
-
 .Map {
   position: absolute;
   top: 0;
@@ -7,6 +5,17 @@
     width: 100%;
     height: 100%;
     overflow: hidden;
+}
+
+.NavControlStyle {
+  right: 10px;
+  top: 10px;
+}
+
+.GeolocateStyle {
+  float: left;
+  margin: 10px;
+  padding: 10px;
 }
 
 .Marker {

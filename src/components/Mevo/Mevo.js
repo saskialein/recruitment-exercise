@@ -3,7 +3,7 @@ import classes from './Mevo.module.css'
 
 const Mevo = () =>
 (<>
-    <h1>The <b>coolest</b> cars <br />in the coolest little capital</h1>
+    <h1>The <b>coolest cars</b> <br />in the coolest little capital</h1>
         <div className={classes.Container}>
             <h3>When you need a ride in Wellington...</h3>
             <p>I'd like a safe ride to work.</p>
