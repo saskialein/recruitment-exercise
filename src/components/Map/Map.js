@@ -51,13 +51,12 @@ class Map extends PureComponent {
             <ReactMapGL
                   {...this.state.viewport}
                     scrollZoom={false}
+                    touchZoom={false}
                     dragRotate={true}
-                    // dragPan={true}
-                    // smooth={true}
+                    touchRotate={true}
+                    dragPan={true}
                     maxPitch={55}
                     maxZoom={19}
-                    // speed={5}
-                    inertia={50550}
                       className={classes.Map}
                       mapboxApiAccessToken={process.env.REACT_APP_MAPBOX_TOKEN}
                       mapStyle='mapbox://styles/saskialein/ckkredcas04qs17ptlqy3rl2q'
@@ -70,7 +69,7 @@ class Map extends PureComponent {
                         className={classes.GeolocateStyle}
                         positionOptions={{enableHighAccuracy: true}}
                         trackUserLocation={true}
-                        fitBoundsOptions={{maxZoom: 12.1}}
+                        fitBoundsOptions={{maxZoom: 12.3}}
                         // auto
         />
                   {this.state.mevoVehicleData.map((car, i) => {
