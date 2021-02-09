@@ -8,10 +8,10 @@
   bottom: 0;
   width: 100%;
   height: 100%;
-  display: inline-block;
 }
 
 .NavControlStyle {
+  position: absolute;
   right: 10px;
   top: 10px;
 }

@@ -3,8 +3,6 @@ import ReactMapGL, { Marker, Source, Layer, NavigationControl, GeolocateControl 
 import axios from 'axios'
 
 import classes from './Map.module.css'
-import 'mapbox-gl/dist/mapbox-gl.css';
-
 class Map extends PureComponent {
     state = {
         viewport: {
