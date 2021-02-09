@@ -1,4 +1,5 @@
 # Mevo take-home assignment
+https://mapbox-practice.netlify.app/
 
 ## 1. Installation instructions
 * Clone the repository with ```git clone + https link```.
