@@ -1,53 +1,49 @@
 .NavigationItem {
-    margin: 0;
-    box-sizing: border-box;
-    display: block;
-    width: 100%;
+  margin: 0;
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
 }
 
 .NavigationItem a {
-    color: #000;
-    text-decoration: none;
-    width: 100%;
-    box-sizing: border-box;
-    display: block;
-    line-height: 48px;
-    font-weight: 500;
-    font-size: 14px;
-    padding: 0px 32px;
+  color: #000;
+  text-decoration: none;
+  width: 100%;
+  box-sizing: border-box;
+  display: block;
+  line-height: 48px;
+  font-weight: 500;
+  font-size: 14px;
+  padding: 0px 32px;
 }
 
 .NavigationItem a:hover,
 .NavigationItem a:active,
 .NavigationItem a:focus,
 .NavigationItem a.Active {
-    background-color:  rgba(0,0,0,.05);
-    transition: background-color .3s;
+  background-color: rgba(0, 0, 0, 0.05);
+  transition: background-color 0.3s;
 }
 
-
-
 @media (min-width: 500px) {
-    .NavigationItem {
-        margin: 0;
-        height: 100%;
-        width: fit-content;
-    }
-    
-    .NavigationItem a {
-        color: white;
-        height: 100%;
-        padding: 0 15px;
-        display: flex;
-        align-items: center;
-        font-size: 1rem;
-    }
-    
-    .NavigationItem a:hover,
-    .NavigationItem a:active,
-    .NavigationItem a.Active {
-    /* background-color: rgba(0, 0, 0, .2); */
-    /* border-bottom: 2px solid #f7590d; */
+  .NavigationItem {
+    margin: 0;
+    height: 100%;
+    width: fit-content;
+  }
+
+  .NavigationItem a {
     color: white;
-    }
+    height: 100%;
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+  }
+
+  .NavigationItem a:hover,
+  .NavigationItem a:active,
+  .NavigationItem a.Active {
+    color: white;
+  }
 }

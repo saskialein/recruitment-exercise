@@ -8,7 +8,7 @@ const NavigationItems = () => (
         <NavigationItem link="/">Why Mevo?</NavigationItem>
         <NavigationItem link="/answers">Questions?</NavigationItem>
     </ul>
-    )
+)
 
 
 export default NavigationItems

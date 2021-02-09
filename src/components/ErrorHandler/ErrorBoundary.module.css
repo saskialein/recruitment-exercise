@@ -1,0 +1,14 @@
+.ErrorMessage {
+  text-align: center;
+  font-style: italic;
+  font-weight: 300;
+  margin-top: 6rem;
+  font-size: 1.2rem;
+}
+
+@media (min-width: 500px) {
+  .ErrorMessage {
+    font-size: 2rem;
+    margin-top: 6rem;
+  }
+}
