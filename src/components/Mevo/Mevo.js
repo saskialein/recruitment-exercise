@@ -3,9 +3,10 @@ import classes from './Mevo.module.css'
 
 const Mevo = () =>
 (<section>
-    <h1>The <b>coolest cars</b> <br />in the coolest little capital</h1>
-        <div className={classes.Container}>
-            <h3>When you need a ride in Wellington...</h3>
+    <h1 className={classes.MainTitle}>The <b>coolest cars</b> <br />in the coolest little capital</h1>
+        <div className={classes.MainContainer}>
+        <h3>When you need a ride in Wellington...</h3>
+        <div className={classes.MevoReasonsContainer}>
             <p>I'd like a safe ride to work.</p>
             <p>I have an important meeting on The Terrace.</p>
             <p>I feel like visiting Martinborough this weekend.</p>
@@ -16,6 +17,7 @@ const Mevo = () =>
             <p>I haven't seen my grandparents in a while.</p>
             <p>I love Wellington, but I really need a short holiday.</p>
             <p>I have to catch a flight from Wellington Airport.</p>
+            </div>
             <h4>...<b>mevo</b> is there for you.</h4>
         </div>
     </section>

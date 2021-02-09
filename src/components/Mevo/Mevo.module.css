@@ -1,10 +1,10 @@
-.Container {
+.MainContainer {
     display: block;
     margin: 0;
     padding: 0;
   }
 
-h1 {
+.MainTitle {
     font-family: 'Graphik Web', sans-serif;
     font-weight: 300;
     font-style: italic;
@@ -15,69 +15,78 @@ h1 {
     text-align: center;
     margin: 0;
     margin-top: 0;
-    padding-top: 25px;
+    padding-top: 1.5rem;
   }
   
-  h3 {
-    color: #f7590d;
-    font-style: italic;
-    font-size: 1.2rem;
-    margin-left: 2.5rem;
-    padding-top: 1rem;
+h3,
+h4 {
+  font-style: italic;
+  margin-left: 2.5rem;
+}
+
+h3 {
+  color: #f7590d;
+  font-size: 1.2rem;
+  padding-top: 1rem;
+}
+
+.MevoReasonsContainer {
+  margin-left: 4rem;
+}
+
+.MevoReasonsContainer p {
+  font-size: .9rem;
+  font-weight: 300;
+  line-height: .9;
+}
+
+h4 {
+  font-weight: 400;
+  font-size: 1.2rem;
+}
+
+/* button {
+  background-color: #f7590d;
+  text-decoration: none;
+  color: #fff;
+  text-align: center;
+  cursor: pointer;
+  outline-style: none;
+  font-size: 14px;
+  border: none;
+  border-radius: 2px;
+  padding: 0 16px;
+  text-transform: uppercase;
+  box-shadow: 0 2px 2px 0 rgb(0 0 0 / 14%), 0 3px 1px -2px rgb(0 0 0 / 12%), 0 1px 5px 0 rgb(0 0 0 / 20%);
+}
+
+button:hover {
+  box-shadow: 0 3px 3px 0 rgb(0 0 0 / 14%), 0 1px 7px 0 rgb(0 0 0 / 12%), 0 3px 1px -1px rgb(0 0 0 / 20%);
+  background-color: rgb(247, 89, 13, .8);
+  transition: background-color .2s ease-out;
+} */
+
+@media (min-width: 500px) {
+  .Container {
+    margin-left: 6rem;
   }
-  
-  p {
-    font-size: 15px;
-    font-weight: 300;
-    line-height: 1;
-    margin-left: 3.2rem;
+
+  .MainTitle {
+    font-size: 5vw;
   }
-  
+
+  h3,
   h4 {
-    font-weight: 400;
-    font-style: italic;
-    font-size: 1.2rem;
-    margin-left: 2.5rem;
-  }
-  
-  button {
-    background-color: #f7590d;
-    text-decoration: none;
-    color: #fff;
-    text-align: center;
-    cursor: pointer;
-    outline-style: none;
-    font-size: 14px;
-    border: none;
-    border-radius: 2px;
-    padding: 0 16px;
-    text-transform: uppercase;
-    box-shadow: 0 2px 2px 0 rgb(0 0 0 / 14%), 0 3px 1px -2px rgb(0 0 0 / 12%), 0 1px 5px 0 rgb(0 0 0 / 20%);
-  }
-  
-  button:hover {
-    box-shadow: 0 3px 3px 0 rgb(0 0 0 / 14%), 0 1px 7px 0 rgb(0 0 0 / 12%), 0 3px 1px -1px rgb(0 0 0 / 20%);
-    background-color: rgb(247, 89, 13, .8);
-    transition: background-color .2s ease-out;
+    font-size: 1.5rem;
+    margin-left: 4.5rem;
   }
 
-  @media (min-width: 500px) {
-    .Container {
-      margin-left: 6rem;
-    }
+  .MevoReasonsContainer {
+    margin-left: 6rem;
+  }
 
-    h1 {
-      font-size: 5vw;
-    }
-
-    h3,
-    h4 {
-      font-size: 1.5rem;
-      margin-left: 0;
-    }
-
-    p {
-      font-size: 16px;
-      margin-left: 1.2rem;
-    }
+  .MevoReasonsContainer p {
+    font-size: 1rem;
+    line-height: 1;
+  }
 }
