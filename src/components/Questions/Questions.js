@@ -119,7 +119,7 @@ export default function Questions() {
                 trigger={triggerThree()}
                 triggerWhenOpen={triggerOpenThree()}>
                 <p>
-                    I have actually been a fan of Mevo since I saw one of your super cool Audi e-trons outside of the Left Bank Arcade for the
+                    I have actually been a fan of Mevo since I saw one of the cool Audi e-trons outside of the Left Bank Arcade for the
                     first time a few years back in 2017. <br />
                     I remember, it immediately caught my attention and I went straight to your website to checkout this innovative service.
                 </p>
@@ -140,10 +140,10 @@ export default function Questions() {
             </Collapsible>
             <div className={classes.NetworkingContainer}>
                 <a className={classes.NetworkingLink} href='https://github.com/saskialein' target='_blank' rel="noreferrer">
-                    <GitHubIcon style={{ fontSize: '3rem', padding: '10px' }} />
+                    <GitHubIcon style={{ fontSize: '3rem', padding: '12px' }} />
                 </a>
                 <a className={classes.NetworkingLink} href='https://www.linkedin.com/in/saskia-leinberger/' target='_blank' rel="noreferrer">
-                    <LinkedInIcon style={{ fontSize: '3rem', padding: '10px' }} />
+                    <LinkedInIcon style={{ fontSize: '3rem', padding: '12px' }} />
                 </a>
             </div>
         </section>

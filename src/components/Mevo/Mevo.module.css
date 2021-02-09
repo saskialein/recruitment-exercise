@@ -68,11 +68,11 @@ button:hover {
 
 @media (min-width: 500px) {
   .Container {
-    margin-left: 6rem;
+    margin-left: 5rem;
   }
 
   .MainTitle {
-    font-size: 5vw;
+    font-size: 6vw;
   }
 
   h3,

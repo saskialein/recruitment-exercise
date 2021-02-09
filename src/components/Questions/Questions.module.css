@@ -2,7 +2,8 @@
   font-family: inherit;
   box-sizing: border-box;
   display: block;
-  margin-top: 7rem;
+  margin: 7rem auto;
+  width: 95vw;
 }
 
 .CustomTriggerCSS,
@@ -19,7 +20,7 @@
 .QuestionContainer {
   display: flex;
   justify-content: space-between;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #696969;
   margin: 0 1.5rem;
   padding: 0 0.8rem;
 }
@@ -47,16 +48,24 @@
 
 .NetworkingLink {
   text-decoration: none;
-  color: black;
+  color: #000;
 }
 
 @media (min-width: 600px) {
+  .SectionContainer {
+    width: 90vw;
+  }
+  
   .Question {
     font-size: 1.2rem;
   }
 }
 
 @media (min-width: 740px) {
+  .SectionContainer {
+    width: 85vw;
+  }
+  
   .QuestionContainer {
     margin: 0 1.8rem;
     padding: 0 1rem;
@@ -79,5 +88,11 @@
   .CustomTriggerCSS,
   .CustomTriggerCSSOpen {
     font-size: 1rem;
+  }
+}
+
+@media (min-width: 1234px) {
+  .SectionContainer {
+    max-width: 65vw;
   }
 }

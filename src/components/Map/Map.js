@@ -3,16 +3,21 @@ import ReactMapGL, { Marker, Source, Layer, NavigationControl, GeolocateControl 
 import axios from 'axios'
 
 import classes from './Map.module.css'
+import 'mapbox-gl/dist/mapbox-gl.css';
+import mapboxgl from 'mapbox-gl';
+
+// @ts-ignore
+// eslint-disable-next-line import/no-webpack-loader-syntax
+mapboxgl.workerClass = require('worker-loader!mapbox-gl/dist/mapbox-gl-csp-worker').default;
 class Map extends PureComponent {
     state = {
         viewport: {
             latitude: -41.299382,
             longitude: 174.793737,
             width: '98vw',
-            height: '60vh',
-            zoom: 11.75
+            height: '75vh',
+            zoom: 12
         },
-        userLocation: {},
         loadedMap: false,
         mevoVehicleData: [],
         mevoHomeZoneData: null,
@@ -50,7 +55,7 @@ class Map extends PureComponent {
                 <ReactMapGL
                     {...this.state.viewport}
                     scrollZoom={false}
-                    touchZoom={false}
+                    touchZoom={true}
                     dragRotate={true}
                     touchRotate={true}
                     dragPan={true}
@@ -68,7 +73,7 @@ class Map extends PureComponent {
                         className={classes.GeolocateStyle}
                         positionOptions={{ enableHighAccuracy: true }}
                         trackUserLocation={true}
-                        fitBoundsOptions={{ maxZoom: 12.3 }} />
+                        fitBoundsOptions={{ maxZoom: 12.8 }} />
                     {Array.isArray(this.state.mevoVehicleData) &&
                         this.state.mevoVehicleData.map((car, i) => {
                             return (<Marker
@@ -109,7 +114,7 @@ class Map extends PureComponent {
                             source-layer='building'
                             filter={['==', 'extrude', 'true']}
                             type='fill-extrusion'
-                            minZoom={13.5}
+                            minZoom={13}
                             paint={{
                                 "fill-extrusion-color": '#aaa',
                                 "fill-extrusion-height":
