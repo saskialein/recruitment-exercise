@@ -1,70 +1,72 @@
-# Getting Started with Create React App
+# Mevo take-home assignment
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 1. Installation instructions
+* Clone the repository with ```git clone + https link```.
+* ```cd``` into the cloned repository.
+* Install modules with ```npm install```.
+* Run the app in development mode with ```npm start```. Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-## Available Scripts
+## 2. Technologies
+* React: [Create React App](https://github.com/facebook/create-react-app) boilerplate
+* Mevo APIs: [Public Endpoints](https://developer.mevo.co.nz/docs/public/introduction)
+* [Mapbox API](https://docs.mapbox.com/) and [React Map GL](https://visgl.github.io/react-map-gl/)
+* Styling: [CSS Modules](https://github.com/css-modules/css-modules)
+* [Collapsible Section Component](https://www.npmjs.com/package/react-collapsible) on Questions-page
+* Mobile-first responsive web design
+* Icons: [Material-UI](https://material-ui.com/components/material-icons/)
 
-In the project directory, you can run:
+## 3. Users Stories
+- [x] As a user, I would like to be able to see all Mevo cars on a map of Wellington displayed as pins at their exact location.
+- [x] As a user, I would like to be able to see the areas where parking the Mevo vehicle is permitted and I can end my trip. (so called Mevo Home Zones)
+- [x] As a user, I would like to have the option to click on the Geolocation symbol to see where my current location is.
+- [x] As a user, I would like to zoom in and out of the map by clicking the navigation controlls.
+- [x] As a user, I would like to see all buildings in 3D when zoomed in.
+- [x] As a user, I would like to be able to change the perspective view of the map.
 
-### `npm start`
+## External APIs
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+| Method | Path | Description |
+|---|---|---|
+| GET | https://api.mevo.co.nz/public/vehicles/all | Retrieves a list of Mevo vehicle objects with their locations (latitude & longitude) and iconUrl. |
+| GET | https://api.mevo.co.nz/public/home-zones/all | Retrieves a formatted Home Zones GeoJSON polygon. |
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### API response bodies
+https://api.mevo.co.nz/public/vehicles/all
+
+```
+[
+  {
+    "iconUrl": "https://assets.mevo.co.nz/vehicles/pin-vehicle-available.png",
+    "position": {
+      "latitude": "-41.291099",
+      "longitude": "174.786042"
+    }
+  },
+  ...
+]
+```
+
+https://api.mevo.co.nz/public/home-zones/all
+
+```
+{
+  "type": "geojson",
+  "data": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [[-180, 90], [-180, -90], [180, -90]],
+        [[174.813131, -41.328536], [174.812305, -41.328514]]
+      ]
+    }
+  }
+}
+```
+
 
 ### `npm test`
 
 Launches the test runner in the interactive watch mode.\
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
