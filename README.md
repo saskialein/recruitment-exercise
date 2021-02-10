@@ -3,7 +3,7 @@
 Be as creative as you like with your map (e.g. Mevo Home Zones, 3D buildings/maps, different perspectives, etc...).
 
 The finished product is deployed on Netlify:
-https://mapbox-practice.netlify.app/
+https://saskias-mevo-map.netlify.app/
 
 ## 1. Installation instructions
 * Clone the repository with ```git clone + repo's https link```.
