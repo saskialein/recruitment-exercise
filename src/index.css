@@ -1,11 +1,6 @@
 @font-face{
   font-family: 'Graphik Web';
-  src: url('../src/fonts/0f75d7dbae2c33c88cb3fda5bb379b43.woff2');
-  src: url('../src/fonts/download1.woff');
-  src: url('../src/fonts/download2.woff');
-  src: url('../src/fonts/download3.woff');
-  src: url('../src/fonts/download4.woff');
-  src: url('../src/fonts/download5.woff');
+  src: url('../src/fonts/graphik-web.woff');
 }
 
 body {
