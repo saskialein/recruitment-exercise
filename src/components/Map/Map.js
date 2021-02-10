@@ -62,7 +62,7 @@ class Map extends PureComponent {
                     maxZoom={19}
                     className={classes.Map}
                     width='98vw'
-                    height= '75vh'
+                    height= '100vh'
                     mapboxApiAccessToken={process.env.REACT_APP_MAPBOX_TOKEN}
                     mapStyle='mapbox://styles/saskialein/ckkredcas04qs17ptlqy3rl2q'
                     onViewportChange={(viewport) => {

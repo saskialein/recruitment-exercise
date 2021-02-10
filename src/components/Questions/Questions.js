@@ -78,10 +78,10 @@ export default function Questions() {
                 trigger={triggerOne()}
                 triggerWhenOpen={triggerOpenOne()}>
                 <p>
-                    My last Job as an Account Manager and Product Coordinator at ANZ Nature Tours has been my favourite job so far.
-                    I am a big fan of New Zealand myself and it was a great pleasure organising tours for overseas clients who have travelled very far to see this amazing country.
-                    For a lot of these clients, it was a 'bucket-list dream' and they have saved a significant amount of money to make this dream come true.
-                    So it was almost an honour, to help them planning their journey to Aotearoa.
+                    My last job as an Account Manager and Product Coordinator at ANZ Nature Tours has been my favourite job so far.
+                    I am a big fan of New Zealand, and it was great fun and an honour to organise tours for European clients, as
+                    for many of them, a trip to Aotearoa has been a long 'bucket-list dream', and they have saved a significant amount of money
+                     to travel around the world to make this dream come true. 
                     <br />
                     Additionally, I was responsible for maintaining our tour operator software, participating in software update webinars and passing new techniques and knowledge on to the team.
                     <br /> I appreciated having this little extra responsibility and helping workmates whenever they were stuck.
@@ -89,13 +89,12 @@ export default function Questions() {
                 <p>
                     Besides that, I also enjoyed the people I worked with. It was a friendly and fun atmosphere, and I enjoyed going to work each morning.
                     The good team environment in which everyone valued one another was powered by daily team huddles (stand-ups).
-                    Sharing feelings, daily workload and road blocks opens up a whole new level of connection, support and
-                    balances work more evenly amongst everyone. We also celebrated achievements with each other which was very rewarding and motivating.
+                    Sharing our feelings, daily workload, achievements and roadblocks with each other opened up a whole new level of connection and  
+                    support and it balanced out the work more evenly amongst everyone.
                 </p>
                 <p>
-                    In addition, we had monthly 1:1s with our Operations Manager to discuss our performance, achievements, issues, frustrations and/or goals,
-                    and a chance to give and receive feedback.
-                    But even outside of these scheduled meetings, management always had an open door for us.
+                    We also had monthly 1:1s with our Operations Manager to discuss our performance, achievements, issues, 
+                    frustrations and goals, and a chance to give and receive feedback.
                 </p>
             </Collapsible>
             <Collapsible
@@ -107,7 +106,9 @@ export default function Questions() {
                 trigger={triggerTwo()}
                 triggerWhenOpen={triggerOpenTwo()}>
                 <p>
-                    It would be great to
+                    Something that I wish to have as part of my job is to get the chance to grow continually, 
+                    learn something new and work towards something that I care about, surrounded by a team who supports me
+                    but also pushes me out of my comfort zones.
                 </p>
             </Collapsible>
             <Collapsible
@@ -119,23 +120,22 @@ export default function Questions() {
                 trigger={triggerThree()}
                 triggerWhenOpen={triggerOpenThree()}>
                 <p>
-                    I have actually been a fan of Mevo since I saw one of the cool Audi e-trons outside of the Left Bank Arcade for the
-                    first time a few years back in 2017. <br />
-                    I remember, it immediately caught my attention and I went straight to your website to checkout this innovative service.
+                I have been a fan of Mevo since I saw one of the cool Audi e-trons outside of the Left Bank Arcade for the
+                    first time in 2017.  <br />
+                    I remember, it immediately caught my attention, and I went straight to your website to check out this innovative service.
                 </p>
                 <p>
-                    Looking at the Mevo fleet now and also browsing through your press articles, it is fascinating as well as almost relieving to see,
+                    Looking at the Mevo fleet today and also browsing through your press articles, it is fascinating as well as almost relieving to see,
                     how quickly the concept of sharing a car grew in popularity and with that, the increased chance to lower emissions and make a positive
                     impact on our future.
                 </p>
                 <p>
-                    Besides being a big fan of your service (and your European cars), I am impressed by your digital first approach and ambitious technology,
-                    like keyless access to vehicles with mobile apps or the home zone indicator in your cars.
+                    Besides being a big fan of your service (and your European cars), I am impressed by your 'digital first' approach and ambitious technology,
+                    like the keyless access to vehicles with mobile apps or the home zone indicator in your cars.
                 </p>
                 <p>
-                    I believe that Mevo is a company that allows me to grow at immense speed and it would truly excite me to work with your team behind the scenes
-                    to allow more users to have access to shared cars.
-                    Self-driving cars?
+                    I believe that Mevo is a company that allows me to grow at immense speed and it would genuinely excite me to work with your team behind the scenes
+                    to enable more people to have access to shared cars.
                 </p>
             </Collapsible>
             <div className={classes.NetworkingContainer}>
