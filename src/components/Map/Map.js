@@ -5,6 +5,7 @@ import axios from 'axios'
 import classes from './Map.module.css'
 import 'mapbox-gl/dist/mapbox-gl.css';
 import mapboxgl from 'mapbox-gl';
+import Legend from '../Legend/Legend';
 
 // @ts-ignore
 // eslint-disable-next-line import/no-webpack-loader-syntax
@@ -14,8 +15,6 @@ class Map extends PureComponent {
         viewport: {
             latitude: -41.299382,
             longitude: 174.793737,
-            width: '98vw',
-            height: '75vh',
             zoom: 12
         },
         loadedMap: false,
@@ -62,6 +61,8 @@ class Map extends PureComponent {
                     maxPitch={55}
                     maxZoom={19}
                     className={classes.Map}
+                    width='98vw'
+                    height= '75vh'
                     mapboxApiAccessToken={process.env.REACT_APP_MAPBOX_TOKEN}
                     mapStyle='mapbox://styles/saskialein/ckkredcas04qs17ptlqy3rl2q'
                     onViewportChange={(viewport) => {
@@ -139,7 +140,8 @@ class Map extends PureComponent {
                                 "fill-extrusion-opacity": 0.6
                             }
                             }
-                        />
+                    />
+                    <Legend />
                 </ReactMapGL>
             </section>
         )
