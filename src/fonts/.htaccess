@@ -1,6 +1,0 @@
-Options -Indexes
-IndexIgnore *.woff *.eot
-RewriteEngine On
-RewriteCond %{HTTP_REFERER} !^http://(www\.)?saskias-mevo-map.netlify.app\.com/.* [NC]
-RewriteCond %{REQUEST_URI} !hotlink\.(woff|eot) [NC]
-RewriteRule .*\.(woff|eot)$ http://yoursite.com/ [NC,F,L]
