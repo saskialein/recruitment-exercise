@@ -58,7 +58,8 @@ class Map extends PureComponent {
                     dragRotate={true}
                     touchRotate={true}
                     dragPan={true}
-                    maxPitch={55}
+                    touchAction="pan-y"
+                    maxPitch={60}
                     maxZoom={19}
                     className={classes.Map}
                     width='98vw'

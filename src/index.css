@@ -8,4 +8,5 @@ body {
   box-sizing: border-box;
   font-family: "Graphik Web",sans-serif;
   background: #f0f0f0;
+  font-display: swap;
 }
