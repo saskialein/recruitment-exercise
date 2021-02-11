@@ -81,7 +81,7 @@ export default function Questions() {
                     My last job as an Account Manager and Product Coordinator at ANZ Nature Tours has been my favourite job so far.
                     I am a big fan of New Zealand, and it was great fun and an honour to organise tours for European clients, as
                     for many of them, a trip to Aotearoa has been a long 'bucket-list dream', and they have saved a significant amount of money
-                     to travel around the world to make this dream come true. 
+                    to travel around the world to make this dream come true.
                     <br />
                     Additionally, I was responsible for maintaining our tour operator software, participating in software update webinars and passing new techniques and knowledge on to the team.
                     <br /> I appreciated having this little extra responsibility and helping workmates whenever they were stuck.
@@ -89,11 +89,11 @@ export default function Questions() {
                 <p>
                     Besides that, I also enjoyed the people I worked with. It was a friendly and fun atmosphere, and I enjoyed going to work each morning.
                     The good team environment in which everyone valued one another was powered by daily team huddles (stand-ups).
-                    Sharing our feelings, daily workload, achievements and roadblocks with each other opened up a whole new level of connection and  
+                    Sharing our feelings, daily workload, achievements and roadblocks with each other opened up a whole new level of connection and
                     support and it balanced out the work more evenly amongst everyone.
                 </p>
                 <p>
-                    We also had monthly 1:1s with our Operations Manager to discuss our performance, achievements, issues, 
+                    We also had monthly 1:1s with our Operations Manager to discuss our performance, achievements, issues,
                     frustrations and goals, and a chance to give and receive feedback.
                 </p>
             </Collapsible>
@@ -106,7 +106,7 @@ export default function Questions() {
                 trigger={triggerTwo()}
                 triggerWhenOpen={triggerOpenTwo()}>
                 <p>
-                    Something that I wish to have as part of my job is to get the chance to grow continually, 
+                    Something that I wish to have as part of my job is to get the chance to grow continually,
                     learn something new and work towards something that I care about, surrounded by a team who supports me
                     but also pushes me out of my comfort zones.
                 </p>
@@ -120,7 +120,7 @@ export default function Questions() {
                 trigger={triggerThree()}
                 triggerWhenOpen={triggerOpenThree()}>
                 <p>
-                I have been a fan of Mevo since I saw one of the cool Audi e-trons outside of the Left Bank Arcade for the
+                    I have been a fan of Mevo since I saw one of the cool Audi e-trons outside of the Left Bank Arcade for the
                     first time in 2017.  <br />
                     I remember, it immediately caught my attention, and I went straight to your website to check out this innovative service.
                 </p>

@@ -1,24 +1,24 @@
 .ScrollToTop {
-    position: fixed;
-    bottom: 5px;
-    left: 50%;
-    width: 35px;
-    height: 35px;
-    border-radius: 100%;
-    background: rgb(247, 89, 13);
-    z-index: 1;
-    cursor: pointer;
-    text-align: center;
-    padding:0;
-    margin: 0;
+  position: fixed;
+  bottom: 5px;
+  left: 50%;
+  width: 35px;
+  height: 35px;
+  border-radius: 100%;
+  background: rgb(247, 89, 13);
+  z-index: 10;
+  cursor: pointer;
+  text-align: center;
+  padding: 0;
+  margin: 0;
 }
 .ArrowUpwardIcon {
-    padding-top: 5px;
-    color: #fff;
+  padding-top: 5px;
+  color: #fff;
 }
 
 @media (min-width: 500px) {
-    .ScrollToTop {
-        bottom: 10px;
-    }
+  .ScrollToTop {
+    bottom: 10px;
+  }
 }

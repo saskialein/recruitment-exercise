@@ -24,7 +24,7 @@ const ScrollToTop = () => {
 
     return (
         <div className={classes.ScrollToTop} onClick={scrollToTop}>
-            <ArrowUpwardIcon className={classes.ArrowUpwardIcon}/>
+            <ArrowUpwardIcon className={classes.ArrowUpwardIcon} />
         </div>
     );
 };

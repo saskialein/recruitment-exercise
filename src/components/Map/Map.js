@@ -3,9 +3,11 @@ import ReactMapGL, { Marker, Source, Layer, NavigationControl, GeolocateControl 
 import axios from 'axios'
 
 import classes from './Map.module.css'
+import Legend from '../Legend/Legend';
 import 'mapbox-gl/dist/mapbox-gl.css';
 import mapboxgl from 'mapbox-gl';
-import Legend from '../Legend/Legend';
+
+//Workaraound code for the transpiling issues of the map:
 
 // @ts-ignore
 // eslint-disable-next-line import/no-webpack-loader-syntax
@@ -63,7 +65,7 @@ class Map extends PureComponent {
                     maxZoom={19}
                     className={classes.Map}
                     width='98vw'
-                    height= '100vh'
+                    height='100vh'
                     mapboxApiAccessToken={process.env.REACT_APP_MAPBOX_TOKEN}
                     mapStyle='mapbox://styles/saskialein/ckkredcas04qs17ptlqy3rl2q'
                     onViewportChange={(viewport) => {
@@ -110,37 +112,37 @@ class Map extends PureComponent {
                                     "line-width": 2
                                 }} />
                         </Source>}
-                        <Layer
-                            id='3d-buildings'
-                            source='composite'
-                            source-layer='building'
-                            filter={['==', 'extrude', 'true']}
-                            type='fill-extrusion'
-                            minZoom={13}
-                            paint={{
-                                "fill-extrusion-color": '#aaa',
-                                "fill-extrusion-height":
-                                    [
-                                        "interpolate",
-                                        ["linear"],
-                                        ["zoom"],
-                                        13.5,
-                                        0,
-                                        14,
-                                        ["get", "height"]
-                                    ],
-                                "fill-extrusion-base": [
+                    <Layer
+                        id='3d-buildings'
+                        source='composite'
+                        source-layer='building'
+                        filter={['==', 'extrude', 'true']}
+                        type='fill-extrusion'
+                        minZoom={13}
+                        paint={{
+                            "fill-extrusion-color": '#aaa',
+                            "fill-extrusion-height":
+                                [
                                     "interpolate",
                                     ["linear"],
                                     ["zoom"],
                                     13.5,
                                     0,
                                     14,
-                                    ["get", "min_height"]
+                                    ["get", "height"]
                                 ],
-                                "fill-extrusion-opacity": 0.6
-                            }
-                            }
+                            "fill-extrusion-base": [
+                                "interpolate",
+                                ["linear"],
+                                ["zoom"],
+                                13.5,
+                                0,
+                                14,
+                                ["get", "min_height"]
+                            ],
+                            "fill-extrusion-opacity": 0.6
+                        }
+                        }
                     />
                     <Legend />
                 </ReactMapGL>
