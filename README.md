@@ -3,7 +3,7 @@
 Be as creative as you like with your map (e.g. Mevo Home Zones, 3D buildings/maps, different perspectives, etc...).
 
 The original: [Mevo](https://mevo.co.nz/) <br />
-Saskia's version (deployed on Netlify): [Saskia's Mevo App](https://saskias-mevo-map.netlify.app/)
+My version (deployed on Netlify): [Saskia's Mevo App](https://saskias-mevo-map.netlify.app/)
 
 ## 1. Installation instructions
 * Clone the repository with ```git clone + repo's https link```.
