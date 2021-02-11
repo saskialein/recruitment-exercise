@@ -1,9 +1,9 @@
 .ScrollToTop {
   position: fixed;
-  bottom: 5px;
+  bottom: 10px;
   left: 50%;
-  width: 35px;
-  height: 35px;
+  width: 40px;
+  height: 40px;
   border-radius: 100%;
   background: rgb(247, 89, 13);
   z-index: 10;
@@ -13,7 +13,7 @@
   margin: 0;
 }
 .ArrowUpwardIcon {
-  padding-top: 5px;
+  padding-top: 7px;
   color: #fff;
 }
 
