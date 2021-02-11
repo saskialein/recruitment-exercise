@@ -1,22 +1,23 @@
-# Mevo take-home assignment
-**Task:** Build a static website with React that queries the Mevo APIs and displays the position of Mevo vehicles on a map. 
+# Mevo exercise
+**The task:** Build a static website with React that queries the Mevo APIs and displays the position of Mevo vehicles on a map. 
 Be as creative as you like with your map (e.g. Mevo Home Zones, 3D buildings/maps, different perspectives, etc...).
 
-The finished product is deployed on Netlify:
-https://saskias-mevo-map.netlify.app/
+The original: [Mevo](https://mevo.co.nz/) <br />
+Saskia's version (deployed on Netlify): [Saskia's Mevo App](https://saskias-mevo-map.netlify.app/)
 
 ## 1. Installation instructions
 * Clone the repository with ```git clone + repo's https link```.
 * ```cd``` into the cloned repository.
-* Install modules with ```npm install```.
-* Run the app in development mode with ```npm start```. Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+* Install node modules with ```npm install```.
+* Run the app in development mode with ```npm start```. 
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 ## 2. Technologies
 * React: [Create React App](https://github.com/facebook/create-react-app) boilerplate
 * Mevo APIs: [Public Endpoints](https://developer.mevo.co.nz/docs/public/introduction)
 * [Mapbox API](https://docs.mapbox.com/) and [React Map GL](https://visgl.github.io/react-map-gl/)
 * Styling: [CSS Modules](https://github.com/css-modules/css-modules)
-* [Collapsible Section Component](https://www.npmjs.com/package/react-collapsible) on Questions-page
+* Helpful npm packages: [axios](https://www.npmjs.com/package/axios), [React Router](https://reactrouter.com/), [Collapsible Section Component](https://www.npmjs.com/package/react-collapsible), [React Tooltip](https://www.npmjs.com/package/react-tooltip) 
 * Mobile-first responsive web design
 * Icons: [Material-UI](https://material-ui.com/components/material-icons/)
 
@@ -28,8 +29,9 @@ https://saskias-mevo-map.netlify.app/
 - [x] As a user, I would like to see all buildings in 3D when zoomed in.
 - [x] As a user, I would like to be able to change the perspective view of the map.
 
-### Stretch User Stories
--[ ] As a user, I would like to find the closest available car (inkl. distance and directions)
+### Stretch User Stories (to work on in the future)
+- [ ] As a user, I would like to find the closest available car (inkl. distance and directions)
+- [ ] As a user, I would like to be able to see the current traffic situation in Wellington.
 
 ## External APIs
 
